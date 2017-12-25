@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-
+"use strict";
 // Enemies our player must avoid
 class Enemy {
   constructor(x, y, speed) {
@@ -58,15 +58,13 @@ class Point { //class for Star.png
       this.x = Math.floor(Math.random() * 404); //star randomly relocates when player gets in range
       this.y = 72 + Math.floor(Math.random() * 165);
 
-      $('.num').empty(); //empty the .num span, getting ready to replace with updated score
       score += 3; //score increments by 3 and adds to score if player gets in range of star
-      $('.num').append(score); //updated score then gets appends to .num span
+      $('.num').text(score); //updated score then gets appended to .num span
     }
 
     if (score <= 0) { //if score is less than or equals to 0 then score will not be able to decrement lower than 0
-      $('.num').empty(); //empty the .num span, getting ready to replace with updated score
       score = 0; //score's value will reset to 0
-      $('.num').append(score); //updated score then gets appends to .num span
+      $('.num').text(score); //updated score then gets appended to .num span
     }
   }
 
@@ -95,9 +93,8 @@ class Player {
       this.x = 202;
       this.y = 380;
 
-      $('.num').empty(); //empty the .num span, getting ready to replace with updated score
       score++; //score increments by 1 when player gets in range of the water
-      $('.num').append(score); //updated score then gets appends to .num span
+      $('.num').text(score); //updated score then gets appended to .num span
     }
 
     if (this.x > 400) { //if player attempts to go over 400 on the right or 0 on the left, player's position with remain at the 400 or 0 position

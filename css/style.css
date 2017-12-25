@@ -1,7 +1,6 @@
 body {
   text-align: center;
   background-image: url('../images/congruent_pentagon.png');
-  zoom: 85%;
 }
 
 .score {
@@ -36,10 +35,6 @@ body {
 .points {
   margin: 1em 0 .6em .5em;
   width: 129px;
-}
-
-.pt {
-  margin-bottom: .3em !important;
 }
 
 .container p {
