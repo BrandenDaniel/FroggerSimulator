@@ -8,7 +8,7 @@ class Enemy {
     this.x = x;
     this.y = y;
     this.speed = speed;
-    this.sprite = 'images/enemy-bug.png';
+    this.sprite = 'frogimages/enemy-bug.png';
   }
 
   // Update the enemy's position, required method for game
@@ -47,7 +47,7 @@ class Point { //class for Star.png
   constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.sprite = 'images/Star.png';
+    this.sprite = 'frogimages/Star.png';
   }
 
   update() {
@@ -82,7 +82,7 @@ class Player {
     this.x = x;
     this.y = y;
     this.speed = speed;
-    this.sprite = 'images/char-boy.png';
+    this.sprite = 'frogimages/char-boy.png';
   }
 
   //Updates the position of player
