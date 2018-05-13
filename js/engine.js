@@ -108,12 +108,12 @@ var Engine = (function(global) {
      * for that particular row of the game level.
      */
     var rowImages = [
-        'frogimages/water-block.png', // Top row is water
-        'frogimages/stone-block.png', // Row 1 of 3 of stone
-        'frogimages/stone-block.png', // Row 2 of 3 of stone
-        'frogimages/stone-block.png', // Row 3 of 3 of stone
-        'frogimages/grass-block.png', // Row 1 of 2 of grass
-        'frogimages/grass-block.png' // Row 2 of 2 of grass
+        'img/water-block.png', // Top row is water
+        'img/stone-block.png', // Row 1 of 3 of stone
+        'img/stone-block.png', // Row 2 of 3 of stone
+        'img/stone-block.png', // Row 3 of 3 of stone
+        'img/grass-block.png', // Row 1 of 2 of grass
+        'img/grass-block.png' // Row 2 of 2 of grass
       ],
       numRows = 6,
       numCols = 5,
@@ -171,12 +171,12 @@ var Engine = (function(global) {
    * all of these images are properly loaded our game will start.
    */
   Resources.load([
-    'frogimages/stone-block.png',
-    'frogimages/water-block.png',
-    'frogimages/grass-block.png',
-    'frogimages/enemy-bug.png',
-    'frogimages/char-boy.png',
-    'frogimages/Star.png'
+    'img/stone-block.png',
+    'img/water-block.png',
+    'img/grass-block.png',
+    'img/enemy-bug.png',
+    'img/char-boy.png',
+    'img/Star.png'
   ]);
   Resources.onReady(init);
 
